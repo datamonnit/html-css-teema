@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Datamonnit</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/custom-style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="branding">
-                <img src="img/esedu_favico.png"> Data<span>monnit</span>
+            <div id="branding">
+                <h1><img src="img/esedu_favico.png"> Data<span class="highlight">monnit</span></h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Koti</a></li>
                     <li><a href="tietoja.html">Tietoja</a></li>
-                    <li><a href="#">Projektit</a></li>
+                    <li><a href="#" class="highlight">Projektit</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,7 +27,7 @@
         <div class="container">
             <h2>Tilaa uutiskirjeemme</h2>
             <form>
-                <input type="text" placeholder="Sähköpostiosoitteesi">
+                <input type="email" placeholder="Sähköpostiosoitteesi">
                 <button>Tilaa</button>
             </form>
         </div>
@@ -63,17 +64,17 @@
             <aside id="sidebar">
                 <div class="dark">
                     <h3>Lähetä viesti</h3>
-                    <form>
+                    <form class="message">
                         <div>
-                            <label>Nimi</label>
+                            <label>Nimi</label><br>
                             <input type="text" placeholder="Nimesi...">
                         </div>
                         <div>
-                            <label>Sähköposti</label>
-                            <input type="text" placeholder="Sähköpostiosoitteesi...">
+                            <label>Sähköposti</label><br>
+                            <input type="email" placeholder="Sähköpostiosoitteesi...">
                         </div>
                         <div>
-                            <label>Nimi</label>
+                            <label>Nimi</label><br>
                             <textarea rows="3" placeholder="Viesti tähän ..."></textarea>
                         </div>
                         <button>Lähetä</button>
