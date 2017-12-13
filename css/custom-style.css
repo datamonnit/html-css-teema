@@ -215,3 +215,60 @@ footer {
     text-align: center;
     border-top: #a4bd39 3px solid;
 }
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px 4px;
+    }
+
+    #branding,
+    header nav,
+    header nav ul li,
+    #newsletter,
+    #newsletter h2,
+    #newsletter form,
+    #boxes .box,
+    #sidebar, #main-col,
+    #showcase
+     {
+        display: block;
+        float: none;
+        width: 100%;
+        clear: both;
+        /* margin: 0; */
+        text-align: center;
+    }
+
+    header nav ul li {
+        text-align: center;
+        padding: 5px 0; 
+    }
+
+    #newsletter h2 {
+        font-size: 1.2em;
+    }
+    #newsletter form {
+        padding: 0 10px;
+    }
+
+    #newsletter input[type="email"], .message input, .message textarea, #newsletter button, .message button {
+        width: 100%;
+        padding: 4px;
+        height: 40px;
+    }
+
+    #showcase  {
+        min-height: initial;
+        padding: 50px 0;
+    }
+
+    #showcase h1 {
+        margin: 0;
+        font-size: 1.8em;
+    }
+}
